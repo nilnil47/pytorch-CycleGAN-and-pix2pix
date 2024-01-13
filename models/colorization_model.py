@@ -40,7 +40,7 @@ class ColorizationModel(Pix2PixModel):
         We convert the Lab image 'real_B' (inherited from Pix2pixModel) to a RGB image 'real_B_rgb'.
         we convert the Lab image 'fake_B' (inherited from Pix2pixModel) to a RGB image 'fake_B_rgb'.
         """
-        # reuse the pix2pix model
+        # §§reuse the pix2pix model
         Pix2PixModel.__init__(self, opt)
         # specify the images to be visualized.
         self.visual_names = ['real_A', 'real_B_rgb', 'fake_B_rgb']
